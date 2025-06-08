@@ -3,7 +3,7 @@ import React from "react";
 export function SkipCard({ skip, isSelected, onSelect }) {
   const totalPrice = skip.price_before_vat + skip.vat;
   const sizeCategory =
-    skip.size < 4 ? "Small" : skip.size < 8 ? "Medium" : "Large";
+    skip.size < 9 ? "Small" : skip.size < 15 ? "Medium" : "Large";
 
   return (
     <div

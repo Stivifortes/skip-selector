@@ -42,9 +42,9 @@ export default function App() {
   const filteredSkips = activeTab === "all"
     ? skips
     : skips.filter((skip) => {
-        if (activeTab === "small") return skip.size < 4;
-        if (activeTab === "medium") return skip.size >= 4 && skip.size < 8;
-        if (activeTab === "large") return skip.size >= 8;
+        if (activeTab === "small") return skip.size < 9;
+        if (activeTab === "medium") return skip.size >= 9 && skip.size < 15;
+        if (activeTab === "large") return skip.size >= 15;
         return true;
       });
 
@@ -173,7 +173,7 @@ export default function App() {
                       {/* Skip Size */}
                       <div>
                         <h3 className="text-2xl md:text-3xl font-bold text-white mb-1 md:mb-2">{selectedSkip.size} Yard Skip</h3>
-                        <p className="text-sm md:text-base text-gray-400">Perfect for {selectedSkip.size < 4 ? 'small' : selectedSkip.size < 8 ? 'medium' : 'large'} projects</p>
+                        <p className="text-sm md:text-base text-gray-400">Perfect for {selectedSkip.size < 9 ? 'small' : selectedSkip.size < 15 ? 'medium' : 'large'} projects</p>
                       </div>
 
                       {/* Features */}

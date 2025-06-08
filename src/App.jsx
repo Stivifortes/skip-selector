@@ -101,23 +101,7 @@ export default function App() {
 
         {/* Size Categories */}
         <div className="mb-8">
-          <div className="flex space-x-2 overflow-x-auto pb-2" role="tablist">
-            {["all", "small", "medium", "large"].map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                role="tab"
-                aria-selected={activeTab === tab}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                  activeTab === tab
-                    ? "bg-orange-500 text-white"
-                    : "bg-[#252629] text-gray-300 hover:bg-[#2f2f31]"
-                }`}
-              >
-                {tab.charAt(0).toUpperCase() + tab.slice(1)}
-              </button>
-            ))}
-          </div>
+          <SegmentControl activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
 
         {/* Main Content Area */}

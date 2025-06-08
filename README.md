@@ -81,7 +81,3 @@ A modern, user-friendly skip selection interface that transforms the traditional
 - Enhance mobile interactions
 - Add skip availability calendar
 - Implement skip customization options
-
-## Screenshot of redesign
-
-## Link to deployed sandbox (e.g., CodeSandbox or Vercel)
